@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EasyParcel Tracking MY</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; padding: 20px; background: #f0f2f5; }
+    .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    input, button { padding: 12px; width: 100%; margin: 10px 0; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; }
+    button { background: #0070f3; color: white; border: none; cursor: pointer; font-weight: bold; }
+    button:hover { background: #0050d3; }
+    .event { padding: 12px; margin: 8px 0; background: #f8f9fa; border-left: 4px solid #0070f3; border-radius: 4px; }
+    .error { color: #e53e3e; padding: 10px; background: #fed7d7; border-radius: 4px; margin: 10px 0; }
+    .success { color: #38a169; font-weight: bold; }
+    .loader { text-align: center; margin: 20px 0; display: none; }
+    .loader:after { content: "🔄 Loading..."; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>📦 Track Parcel (EasyParcel Demo)</h2>
+    <input type="text" id="awb" placeholder="Masukkan nombor AWB (contoh: 238725129086)">
+    <button onclick="track()">Track Parcel</button>
+    <div id="loader" class="loader"></div>
+    <div id="result"></div>
+  </div>
 
+  <script src="script.js"></script>
+</body>
+</html>
